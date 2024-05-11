@@ -1,0 +1,79 @@
+
+#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+#define nl "\n"
+#define nn cout << "NO\n"
+#define yy cout << "YES\n"
+#define ss " "
+#define sc static_cast
+#define sz size()
+#define pb push_back
+#define ll long long
+#define ull unsigned long long
+#define gcd(a, b) __gcd(a, b)
+#define lcm(a, b) ((a / gcd(a, b)) * b)
+#define pii pair<int, int>
+#define pll pair<long long, long long>
+#define mm(a, x) memset(a, x, sizeof(a))
+using namespace std;
+int main()
+{
+    int t;
+    cin >>t;
+    while (t--)
+    {
+       int a,b;
+       cin>>a>>b;
+       int c,d;
+       cin>>c>>d;
+       int con=0;
+
+       //bool f1= false;
+       if(a < b)
+       {
+           for(int i=a;i<b;i++)
+           {
+               if(i==c)
+               {
+                   con++;
+               }
+               if(i==d)
+               {
+                   con++;
+               }
+           }
+
+       }
+       else
+       {
+            for(int i=b;i<a;i++)
+           {
+               if(i==c)
+               {
+                   con++;
+               }
+               if(i==d)
+               {
+                   con++;
+               }
+
+
+           }
+
+       }
+
+       if(con==2 || con==0)
+       {
+           nn;
+       }
+       else
+       {
+           yy;
+       }
+
+
+    }
+
+
+    return 0;
+}
